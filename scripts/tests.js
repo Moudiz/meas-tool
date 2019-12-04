@@ -26,7 +26,7 @@ function StartTest(test_id){
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: "http://127.0.0.1:8000/tests/begintest/",
+            url: "https://measurementtoolbackend.herokuapp.com/tests/begintest/",
             data : JSON.stringify({id : test_id}),
             contentType: "application/json; charset=utf-8"
         })
@@ -35,7 +35,7 @@ function StartTest(test_id){
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: "http://127.0.0.1:8000/tests/continuetest/",
+            url: "https://measurementtoolbackend.herokuapp.com/tests/continuetest/",
             data : JSON.stringify({id : test_id}),
             contentType: "application/json; charset=utf-8"
         })
@@ -71,7 +71,7 @@ function PauseTest(test_id) {
     $.ajax({
         type: "POST",
         dataType: "json",
-        url: "http://127.0.0.1:8000/tests/abletorun/",
+        url: "https://measurementtoolbackend.herokuapp.com/tests/abletorun/",
         data : JSON.stringify({id : test_id}),
         contentType: "application/json; charset=utf-8"
     })
@@ -90,7 +90,7 @@ function StopTest(test_id) {
     $.ajax({
         type: "POST",
         dataType: "json",
-        url: "http://127.0.0.1:8000/tests/stoptest/",
+        url: "https://measurementtoolbackend.herokuapp.com/tests/stoptest/",
         data : JSON.stringify({id : test_id}),
         contentType: "application/json; charset=utf-8"
     })
@@ -119,7 +119,7 @@ function UpdateTest(test_id){
     $.ajax({
         async: false,
         type: "POST",
-        url: "http://127.0.0.1:8000/tests/progress/",
+        url: "https://measurementtoolbackend.herokuapp.com/tests/progress/",
         data : JSON.stringify({id : test_id}),
         contentType: "application/json; charset=utf-8",
         success: function(response) {
@@ -134,7 +134,7 @@ $(window).on("load",function(){
     $("#tests").hide();
     $("#newTest").hide();
     $.ajax({
-        url: "http://127.0.0.1:8000/tests/gettests/", //https://measurementtoolbackend.herokuapp.com/ http://127.0.0.1:8000/
+        url: "https://measurementtoolbackend.herokuapp.com/tests/gettests/", //https://measurementtoolbackend.herokuapp.com/ https://measurementtoolbackend.herokuapp.com/
         dataType: "json",
         success: function( response ) {
             $("#loading").hide();
