@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../styles/Create_Test_Page.css">
+        <link rel="stylesheet" href="./Style.css">
+        <script src="../scripts/Edit_Database_Page.js"></script>
+        <title>Define Database</title>
+        
+    </head>
+    <body onload="onload()">
+            <div class="Header">
+                <button class = "btn btn-danger custom cancel" onClick = "document.location = 'Databases.html'">CANCEL</button>
+                <h3 class = "title">EDIT DATABASE</h3>
+                <button class = "btn btn-success custom done" onClick = "CheckFields()">DONE</button>
+            </div>
+            <div class="form-group">
+                <br>
+                <label for="InputName">Name</label>
+                <input type="name" class="form-control" id="InputName" placeholder="Name Of The Database">
+            </div>
+            <div class="form-group">
+                    <label for="InputHost">Host</label>
+                    <input type="host" class="form-control" id="InputHost" placeholder="Enter The IP Address Of The Host">
+            </div>
+            <div class="form-group">
+                <label for="InputPort">Port</label>
+                <input type="port" class="form-control" id="InputPort" placeholder="Enter Port Number">
+            </div>
+            <div class="form-group">
+                <label for="InputUser">User</label>
+                <input type="user" class="form-control" id="InputUser" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <label for="InputPassword">Password</label>
+                <input type="password" class="form-control" id="myInput">
+                <input type="checkbox" onclick="myFunction()">Show Password
+
+            </div>
+
+            <div class="container">
+                    <form>
+                      <label for="ChooseDataBase">Choose Database</label>  
+                      <br>
+                      <label class="radio-inline">
+                        <input class ="radio" type="radio" name="optradio" checked id="1" value = "Cassandra"> Cassandra
+                      </label>
+                      <label class="radio-inline">
+                        <input class ="radio" type="radio" name="optradio" id="4" value="Neo4j"> Neo4j
+                      </label>
+                      <label class="radio-inline">
+                        <input class ="radio" type="radio" name="optradio" id="2" value="OrientDB"> OrientDB
+                      </label>
+                      <label class="radio-inline">
+                        <input class ="radio" type="radio" name="optradio" id="3" value="Postgresql"> Postgresql
+                      </label>
+                    </form>
+                  </div>
+                  <div id="snackbar">Database Successfully Updated</div>
+    </body>
+</html>

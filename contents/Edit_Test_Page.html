@@ -1,0 +1,72 @@
+<html>
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../scripts/Edit_Test_Page.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../styles/Edit_Test_Page.css">
+    </head>
+    
+    
+    <body onload="on_load()">
+    
+        <div class="Header">
+        <button class = "btn btn-danger custom cancel" onClick = "Cancel()">CANCEL</button>
+        <h3 class = "title">EDIT TEST</h3>
+        <button class = "btn btn-success custom done" onClick = "checkAll()">DONE</button>
+       
+        </div>  
+        <hr>
+        <div class ="all">
+        <div class = "Left-Fields">
+            
+            <label class = "left-labels names" >Name*</label>
+            <input type = "text" class = "NameInput left-input" id="TestNameField">
+            
+            
+            
+            <label class = "left-labels names" >Description</label>
+            <textarea  class = "DescInput left-input" id="DescriptionField"></textarea>
+           
+
+            
+            <label class = "left-labels names" >Number of query repetitions*</label>
+            <input type = "number" class = "Query_nbInput left-input" id="QueryNBField">
+            
+
+            
+            <label class = "left-labels names">Timeout (in sec)*</label>
+            <input type = "number" class = "Query_TimeoutInput left-input" id="TimeoutField">
+           
+
+            
+        </div>
+
+        
+
+        <div class="right_fields">
+        <label>Available databases</label>
+        <div class="container" id = "db">
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+
+        <label class="QueryLabel" id = "QueryLabel">Queries</label>
+        <container class="queries_fields">
+        <div id = "qr">
+        <ul class="QueriesContainer" id = "QueriesContainer">
+                <li></li>
+        </ul>
+        </container>
+        
+    </div>
+
+
+
+    </div >
+    <div id="snackbar">Test Successfully Updated</div>
+    </body>
+
+</html>

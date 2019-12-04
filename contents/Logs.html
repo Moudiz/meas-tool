@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Logs</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 3px;
+            background-color: #24252A;
+        }
+        
+        li, a {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            color: #edf0f1;
+            text-decoration: none;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10%;    
+        }
+        
+        p {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            color: #edf0f1;
+            text-decoration: none;
+        }
+        
+        div {
+            width:100%;
+            
+        }
+        
+        .main{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .navbar{
+            flex: 0 0 auto;
+            align-content: start;
+        }
+        
+        .intro{
+            flex: 1 1 auto; 
+            text-align: center;
+        }
+        
+        .logo {
+            cursor: pointer;
+        }
+        
+        .nav__links {
+            list-style: none;
+        }
+        
+        .nav__links li {
+            display: inline-block;
+            padding: 10px 20px;
+            word-wrap: break-word;    
+        }
+        
+        .nav__links li a {
+            transition: all 0.3s ease 0s;
+        }
+        
+        .nav__links li a:hover:not(.active) {
+            background-color: rgba(0,136,169,0.5);
+            border: none;
+            border-radius: 50px;
+        }
+        
+        .active {
+            background-color: rgba(0,136,169,1);
+            border: none;
+            border-radius: 50px;	
+        }
+            table {
+            color:white;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+
+            td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            }
+
+            tr:nth-child(even) {
+            background-color: #dddddd;
+            }
+            .button{
+            padding: 0;
+            border: none;
+            background: none;
+        }
+        </style>
+</head>
+<body>
+    <div class="main">
+    <div class="navbar">
+    <header>
+        <a href="../index.html"><img class="logo" src="../images/logo.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="Databases.html">Databases</a></li>
+                <li><a href="tests.html">Tests</a></li>
+                <li><a class="active" href="logs.html">Logs</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+   
+    </div>
+    <table >
+        <thead>
+          <tr>
+            <th style="width: 100px;">Name</th>
+            <th style="width: 100px;">Type</th>
+            <th style="width: 100px;">User</th>
+            <th>Query</th>
+            <th style="width: 100px;">Time</th>
+            <th style="width: 100px;">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CASSANDRA TEST</td>
+            <td>CASSANDRA</td>
+            <td>INCI 2019</td>
+            <td>SELECT event_id, dateOf(created_at) AS creation_date,blobAsText(content) AS content  FROM timeline;</td>
+            <td>10 min</td>
+            <td >
+                    <button type="button" class="button">
+                        <i class="fa fa-trash" style="font-size:30px;color:red;text-shadow:5px 4px 6px #000000;"></i> 
+                    </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+</body>
+</html>

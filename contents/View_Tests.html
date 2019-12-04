@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>View Tests</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="View_Tests.css">
+        <script src="View_Tests.js"></script>
+    </head>
+    <body>
+        
+        <div class="main">
+        <div class="navbar" >
+        <header>
+            <div align="Center">
+           <p >View Tests</p>
+           </div>
+            <nav>
+                <button class="button button3"><a href="contents/tests.html">Done</a></button>
+                
+            </nav>
+        </header>
+        </div>
+
+        <div class="intro">
+                <div class="row">
+                        <div class="column First">
+                            
+                          <h2><span></span> Name</h2>
+                          <br>
+                          <p>DB1</p>
+                        </div>
+                         <div class="column Second" >
+                            <h2>
+                              Min
+                            </h2>
+                            <br>
+                            <p>10</p>
+                        </div>
+                        <div class="column Third">
+                          <h2>
+                            Avg
+                          </h2>
+                          <br>
+                          <p>12.6</p> 
+                        </div>                          
+                        <div class="column Fourth">
+                          <h2>
+                            Max
+                          </h2>
+                          <br>
+                          <p>16</p>
+                        </div>
+                     <div class="column Last"align="Center">
+                            <p align="left" id="rcorners1">Query</p>
+                            <br/>
+                            <br/>
+                            <table style="width: 100%; height: 50%" >
+                              <tr>
+                                <th>Name</th>
+                                <th>Loading</th> 
+                                <th>Time</th>
+                              </tr>
+                              <tr>
+                                <td align="center">1</td>
+                                <td>
+                                  <div id="myProgress">
+                                    <div id="myBar">10%</div>
+                                  </div>
+                                  
+                                </td>
+                                <td align="center">10s</td>
+                              </tr>
+                              <tr>
+                                <td align="center">2</td>
+                                <td>
+                                  <div id="myProgress">
+                                  <div id="myBar">10%</div>
+                                </div>
+                                </td>
+                                <td align="center">12s</td>
+                              </tr>
+                              <tr>
+                                <td align="center">3</td>
+                                <td>
+                                    <div id="myProgress">
+                                        <div id="myBar">10%</div>
+                                      </div>                                      
+                                </td>
+                                <td align="center">16s</td>
+                              </tr>
+                            </table>
+                        </div>
+                         
+            
+        <button onclick="move()" style="background-color: green">Start</button> 
+    </body>
+</html>

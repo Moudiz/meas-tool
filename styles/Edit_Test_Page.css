@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+.custom {
+    width: 90px !important;
+}
+
+.Header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.cancel{
+    margin-left: 2%;;
+    margin-top: 20px;
+}
+
+hr{
+    border-top: 1px solid gray;
+}
+
+.done{
+    margin-right: 0% !important;
+    margin-top: 20px;
+}
+.title{
+    margin-left: 35%;
+    margin-right: 39%; 
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Left-Fields{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 9% 1%;
+    max-height: 500px;
+}
+
+.left-input{
+    
+    color:black;
+    max-width: 60%; 
+    max-height: 30px
+}
+
+.DescInput{
+  max-height:200px !important;
+}
+
+.names{
+    margin-left : 20px;
+}
+
+.vl {
+    
+    width: 0;
+    height: 100%;
+    position: fixed;
+    border: 1px solid gray;
+    margin-top: -50px;
+    margin-left: 50%;
+ 
+    
+  }
+
+.all {
+    margin-top: 50px;
+    display: flex;
+    width: 1400px;
+    
+}
+.container { 
+    margin-left:0px;
+    background-color:rgba(71, 66, 66, 0.5);
+    font-family: "Montserrat", sans-serif;
+    color:white;
+    border:2px solid #ccc; width:300px; height: 110px; 
+    overflow-y: scroll; 
+}
+
+.checkbox{
+    margin-top: 10px;
+    margin-left:-40px;
+}
+
+.queries{
+    visibility: hidden;
+    margin: 0 0 30px 0;
+    margin-left:-40px;
+    width: 600px;
+}
+
+.right_fields{
+    display: grid;
+    gap: 3% 7%;
+    
+}
+
+
+body{
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    background-color: #24252A;
+    overflow: hidden;
+    
+}
+ul {
+    list-style-type: none;
+}
+
+.QueryLabel {
+    visibility: hidden;
+}
+.QueriesContainer{
+    font-family: "Montserrat", sans-serif;
+    color:white;
+    width:650px; 
+    height:200px; 
+    overflow-y: auto; 
+    visibility: hidden;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+
