@@ -1,7 +1,11 @@
-
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^meas-tool/index\.html$ /meas-tool/? [L,R=301]
-RewriteRule ^meas-tool/([^\.]+)$ meas-tool/contents/$1.html [NC,L]
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule ^meas-tool/tests/?$ meas-tool/contents/tests.html [L,R=301]
+RewriteRule ^meas-tool/DBs/?$ meas-tool/contents/Databases.html [L,R=301]
+RewriteRule ^meas-tool/addTest/?$ meas-tool/contents/Create_Test_Page.html [L,R=301]
+RewriteRule ^meas-tool/addDB/?$ meas-tool/contents/Create_Database_Page.html [L,R=301]
+RewriteRule ^meas-tool/tests/([0-9]+)/?$ meas-tool/contents/View_Tests.html?test_id=$1 [L,R=301]
+RewriteRule ^meas-tool/editTest/([0-9]+)/?$ meas-tool/contents/Edit_Test_Page.html?test_id=$1 [L,R=301]
+RewriteRule ^meas-tool/editDB/([0-9]+)/?$ meas-tool/contents/Edit_Database_Page.html?db_id=$1 [L,R=301]
+RewriteRule ^meas-tool/deleteDB/([0-9]+)/?$ meas-tool/contents/affected_tests.html?db_id=$1 [L,R=301]
+RewriteRule . meas-tool/index.html [L,R=301]
